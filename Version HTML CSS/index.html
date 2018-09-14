@@ -6,75 +6,92 @@
 		<title> Titulo Web </title> <!-- Cambiando título-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-		<link rel = "stylesheet" href = "estilos.css">/
-
+		<link rel = "stylesheet" href = "estilos.css">
+	</head>
 	<body> <!-- MAIN -->
-	<div id="contenedor">
-		<h1> Titulo Principal </h1> 
-		<hr/> <!-- Línea Separadora -->
-		<br /> <!-- Salto de línea -->
-
-		<h2> Título Secundario</h2>
-
-		<p> Parrafo. <b> Negrita </b> y a continuación una imagen: </p>
-			<!--<i>, Cursiva, </i> <strong> Contenido Importante (Fuerte), </strong> <span> Span con Estilo Css </span> -->
-		<img src = "imagen.jpg"  border:50px solid green>
-		<p> Descripción de la Imagen </p>
-
-		<p> <b> Seleccione una opción: </b>
-			<select> <!-- class="custom-select" id="inputGroupSelect02"-->
-				<option> opción1 </option>
-				<option> opción2 </option>
-				<option> opción3 </option>
-			</select>
-		</p>
-
-		<p>
-			hipervínculo: <a href = "index2.html" class="badge badge-success"> Otra Imagen </a> <br /> <br />   <!--class="badge badge-primary"--> 
-
-			<table class="table table-striped" id=contenedor>
-				<thead>
-				    <tr>
-				      <th scope="col">Columna1</th>
-				      <th scope="col">Columna2</th>
-				    </tr>
-				</thead>
-				<tbody>
-				    <tr>
-				      <td>Fila1</td>
-				      <td>C2F1</td>
-				    </tr>
-				    <tr>
-				      <td>Fila2</td>
-				      <td>C2F2</td>
-				    </tr>
-				</tbody>
-			</table>
-
-			<br />
-
-			<b>Negrita</b>y opciones:
-			<div id = "contenedor">
-				<ul id = "contenedor", class = "subBloque"> 
-					<li> opción A </li>
-					<li> opción B </li>
-					<li> opción C </li>
-				</ul>
-				<ol id = "contenedor", class = "subBloque"> 
-					<li> opción 1 </li>
-					<li> opción 2 </li>
-					<li> opción 3 </li>
-				</ol>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-2"></div>
+				<div class = "col-md-8">
+					<br /> <!-- Salto de línea -->
+					<h1 style = "text-align: center"> Titulo Principal </h1> 
+					<hr/> <!-- Línea Separadora -->
+					<br />
+				</div>
+				<div class = "col-md-2"></div>
+				
+			</div>
+				
+			<div class = "row">
+				<div class = "col-md-3"></div>
+				<div class = "col-md-3">
+				<h2> Título Secundario</h2>
+				<br />
+				<p> Parrafo. <b> Negrita </b> y a continuación una imagen: </p>
+					<!--<i>, Cursiva, </i> <strong> Contenido Importante (Fuerte), </strong> <span> Span con Estilo Css </span> -->
+				</div>
+				<div class = "col-md-3">
+					<img src = "imagen.jpg"  class="rounded mx-auto d-block" > 
+					<p  style = "text-align: center"> Descripción de la Imagen </p>
+				</div>
+				<div class = "col-md-3"></div>
 			</div>
 
+			<div class = "row">
+				<table class="table table-striped">
+					<thead>
+					    <tr>
+					      <th scope="col">Columna1</th>
+					      <th scope="col">Columna2</th>
+					    </tr>
+					</thead>
+					<tbody>
+					    <tr>
+					      <td>Fila1</td>
+					      <td>C2F1</td>
+					    </tr>
+					    <tr>
+					      <td>Fila2</td>
+					      <td>C2F2</td>
+					    </tr>
+					</tbody>
+				</table>
 
-		</p>
+				<br />
+			</div>
 
-
-		<!--<p>
-			<blockquote> Esto es un blockquote. </blockquote>
-			<cite> Esto es una cita </cite>-->
-	</div>
+			<div class = "row">
+				<div class = "col-md-1"></div>
+				<div class = "col-md-5">
+					<p> <b> Seleccione una opción: </b>
+						<select> <!-- class="custom-select" id="inputGroupSelect02"-->
+							<option> opción1 </option>
+							<option> opción2 </option>
+							<option> opción3 </option>
+						</select>
+					</p>
+					<p>
+						hipervínculo: <a href = "index2.html" class="badge badge-success"> Otra Imagen </a> <br /> <br />
+						<b>Negrita</b> y opciones:
+					</p>
+				</div>
+				<div class = "col-md-3">
+					<br />
+					<ul> 
+						<li> opción A </li>
+						<li> opción B </li>
+						<li> opción C </li>
+					</ul>
+				</div>
+				<div  class = "col-md-3">
+					<br />
+					<ol> 
+						<li> opción 1 </li>
+						<li> opción 2 </li>
+						<li> opción 3 </li>
+					</ol>
+				</div>
+			</div>
+		</div>
 	</body>
-
-
+</html>
