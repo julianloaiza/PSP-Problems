@@ -1,5 +1,5 @@
 <?php
-
+	// Julián Andrés Loaiza
 	function dec_hex($dec) {
 	    $hex = "";
 	    if($dec == 0){$hex = "0";}
