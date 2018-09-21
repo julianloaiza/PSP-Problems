@@ -6,8 +6,16 @@ var paellas = [];
 
 function getValueType (paellaType){
 	this.paellaType = paellaType;
-	paellas.push(this.paellaType.value);
-	console.log("add: ", this.paellaType.value)
+	if(paellas.includes(this.paellaType.value)){
+		let indice = 0
+		for (var i = 0; paellas[i] != this.paellaType.value; i++){indice+=1;}
+		paellas.splice(indice, 1);
+		console.log("remove: ", this.paellaType.value);
+	}
+	else{
+		paellas.push(this.paellaType.value);
+		console.log("add: ", this.paellaType.value);
+	}	
 }
 
 function getValuePrice(paellaPrice){
