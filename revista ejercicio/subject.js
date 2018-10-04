@@ -10,7 +10,7 @@ function searchTupla(){
 		success:function(resp){ 
 			$('#res').html(resp) // 200 - ok
 		}
-		//error:function(resp)() 500 -error servidor
+		//error:function(resp) // 500 -error servidor
 	});
 }
 

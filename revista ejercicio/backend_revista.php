@@ -32,7 +32,7 @@
 		function insertUser($mysqli, $obj){
 			$valores = $mysqli->query("INSERT INTO usuario(id_usuario, nombre, apellido, edad, cod_ciudad) VALUES(".$obj->identification.",'".$obj->first_name."', '".$obj->last_name."', ".$obj->age.",".$obj->city.")");
 
-			echo "hello";
+			//echo "hello";
 		}
 
 		function suscribeUser($mysqli, $obj){
