@@ -51,7 +51,7 @@
 					<button type="submit" class="btn btn-success" style="margin-top: 10px">Registrarse</button>
 				</form>
 				<p id="resSus"></p>
-				<form method="POST" onsubmit="suscribeUser(); return false;">
+				<form method="POST" onsubmit="suscribeuser(); return false;">
 					<div class="form-group">
 						<p>Suscribete aquí</p>
 						<label>Identificación</label>
