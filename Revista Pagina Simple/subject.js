@@ -44,6 +44,19 @@ function subscribeuser(){
 	
 	var identification_sus = document.getElementById('identification_sus').value;
 	var magazine = document.getElementById('magazine').value;
+	var dataEn = {
+		'identification_sus':identification_sus,
+		'magazine' : magazine		
+	};
+
+	$.ajax({
+		type : 'POST',
+		url : 'backend_revista_base.php',
+		data:dataEn,
+		success:function(resp){
+			$('#resSus').html(resp)
+		}
+	});
 
 	// capturar info del formulario de suscripcion
 
