@@ -8,9 +8,13 @@
 		$observerclass->getUser($mysqli,$obj);
 	}
 
-	if(isset($_POST)!=NULL && empty($_POST)){		
+	if(isset($_POST['identification']) && !empty($_POST)){		
 		$obj = (object)$_POST;
 		$observerclass ->insertUser($mysqli,$obj);
+	}
+	if(isset($_POST['identification_sus']) && !empty($_POST)){		
+		$obj = (object)$_POST;
+		$observerclass ->suscribeUser($mysqli,$obj);
 	}
 
 
@@ -45,7 +49,10 @@
 
 		}
 
-		function suscribeUser($mysqli, $obj){}	
+		function suscribeUser($mysqli, $obj){
+			$querySub = $mysqli -> query("INSERT INTO suscriptores (id_revista,id_usuario) VALUES (".$obj->magazine.",".$obj->identification_sus.")");
+			echo "Hola te acabas de suscribir";
+		}	
 		
 	}
 
